@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TOOLNAME</title>
+    <link rel="stylesheet" href="css/global.css" type="text/css">
+</head>
+
+<body>
+<div class="row">
+    <div class="large-12 columns">
+        <h1><img class="switchbox" src="img/switchbox.png" alt="switchbox"></h1>
+        <hr/>
+    </div>
+</div>
+
+<!-- FULL PAGE ALERT
+<div class="row">
+    <div class="large-12 columns">
+        <div class="alert panel">
+          <p>Invalid password. Passwords must be between 8 and 32 characters long, contain at least one number and at least one letter, and must not contain the word 'password' or your user name.</p>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="row">
+    <div class="large-12 columns">
+        <fieldset>
+            <form>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label for="affiliate-name">Affiliate Name</label> <!--<span class="error">Error information</span>-->
+                         <input id="affiliate-name" type="text" disabled="disabled" value="AffiliateName">
+                    </div>
+
+                    <div class="large-6 columns">
+                        <label for="affiliate-CID">Affiliate CID</label>
+                         <input id="affiliate-CID" type="text" disabled="disabled" value="123456">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label for="revenue">Revenue</label>
+                        <select id="revenue">
+    				        <option value="husker">Husker</option>
+    				        <option value="starbuck">Starbuck</option>
+    				        <option value="hotdog">Hot Dog</option>
+    				        <option value="apollo">Apollo</option>
+				        </select>
+                    </div>
+
+                    <div class="large-6 columns">
+                        <label for="eapid">EAPID</label>
+                        <select id="eapid">
+    				        <option value="husker">Husker</option>
+    				        <option value="starbuck">Starbuck</option>
+    				        <option value="hotdog">Hot Dog</option>
+    				        <option value="apollo">Apollo</option>
+				        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label for="operating-unit">Operating Unit</label>
+                        <select id="operating-unit">
+    				        <option value="husker">Husker</option>
+    				        <option value="starbuck">Starbuck</option>
+    				        <option value="hotdog">Hot Dog</option>
+    				        <option value="apollo">Apollo</option>
+				        </select>
+                    </div>
+
+                    <div class="large-6 columns">
+                        <label for="business-entity">Business Entity</label>
+                        <select id="business-entity">
+    				        <option value="husker">Husker</option>
+    				        <option value="starbuck">Starbuck</option>
+    				        <option value="hotdog">Hot Dog</option>
+    				        <option value="apollo">Apollo</option>
+				        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 columns">
+                        <label>Tax info on file?</label>
+                         <input type="radio" name="tax-on-file" value="Yes" id="tax-on-file-yes" checked="checked" disabled="disabled"><label for="tax-on-file-yes"><span class="checked">Yes</span></label>
+                         <input type="radio" name="tax-on-file" value="No" id="tax-on-file-no" disabled="disabled"><label for="tax-on-file-no">No</label>
+                    </div>
+                    
+                    <div class="large-6 columns">
+                        <label for="min-check-amount">Minimum check amount</label>
+                         <input id="min-check-amount" type="text" disabled="disabled" value="$50.00">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-12 columns">
+                        <p><a href="#" class="small radius button">Update</a></p>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+
+
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+/*-  CSS "libraries"
+----------------------------------------------------------------------*/
+@import url("foundation.css");
+
+body {
+	line-height:1;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+.top-navigation {
+}
+.nav {
+	margin-bottom: 30px;
+	padding: 15px;
+}
+.nav a {
+	margin-right: 30px;
+	line-height: 1.5em;
+}
+.nav a:hover{
+  text-decoration: underline;
+}
+.nav a.here {
+text-decoration: underline;
+}
+.alert {
+	margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fcf9ee;
+    border: 0;
+    border-left: 2px solid #ffeb8e;
+}
+button, .button {
+	float: right;
+}
+textarea {
+    height: 200px;
+}
+h1 {	
+	font-size: 1.75rem;
+	margin: 10px 0;
+}
+h1 .switchbox {
+	width: 30%;
+}
+
+
+table.responsive {
+	width: 100%;
+}
+table.responsive th {
+	width: 70px;
+	font: inherit;
+}
+table.responsive input[type=checkbox] {
+		vertical-align: middle;
+		margin: 5px auto;
+}
+td.enabled {
+	    background: #69aa4e;
+}
+td.disabled {
+	background: #bababa;
+}
+.verify-changes {
+	margin: 10px 20px;
+}
+
+/* @group edit page */
+label span.checked {
+	font-weight: bold;
+}
+
+ul.make-changes-container {
+	margin-top: 3rem;
+	line-height: 2rem;
+}
+
+ul.make-changes-container li {
+	list-style-type: none;
+}
+
+/* @end */
