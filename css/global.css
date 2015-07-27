@@ -36,15 +36,15 @@ button, .button {
 textarea {
     height: 200px;
 }
-h1 {	
-	font-size: 1.75rem;
+.switchbox {
+	width: 30%;
+	margin: 10px 0;
+	float: left;
+}
+.logout {
+	float: right;
 	margin: 10px 0;
 }
-h1 .switchbox {
-	width: 30%;
-}
-
-
 table.responsive {
 	width: 100%;
 }
