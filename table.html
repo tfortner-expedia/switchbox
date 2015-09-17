@@ -8,16 +8,93 @@
 
 <body>
 <div class="row">
-    <div class="large-12 columns">
+    <div class="medium-12 large-12 columns">
         <img class="switchbox" src="img/switchbox.png" alt="switchbox">
-        <a href="" class="logout">Logout</a>
+        <a href="" class="logout right">Logout</a>
         <hr/>
     </div>
 </div>
 
 <div class="row">
+    <div class="large-12  medium-12 columns">
+        <div class="nav panel">
+            <a href="">Profile</a>
+            <a href="" class="here">Site Settings</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="callout panel clearFix affiliate-name-cid-display">
+        <div class="large-6 medium-6 columns">
+           <p>AffiliateName</p>
+        </div>
+        
+        <div class="large-6 medium-6 columns">
+           <p>CID <strong>12345</strong> <a href="">change</a></p>
+        </div>
+    </div>
+  </div>
+</div> 
+
+<!-- FULL PAGE ALERT
+<div class="row">
+    <div class="large-12 medium-12 columns">
+        <div class="alert panel">
+          <p>Invalid password. Passwords must be between 8 and 32 characters long, contain at least one number and at least one letter, and must not contain the word 'password' or your user name.</p>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="row">
     <div class="large-12 columns">
     <form>
+        <table class="responsive">
+        <tbody>
+            <tr>
+                <td width="50%">Display "US and Canada" phone number</td>
+                <td>
+                    <input type="radio" name="" value="Enable" id="us-phone-number-on" checked="checked" disabled="disabled"><label for="us-phone-number-on"><span class="checked">On</span></label>
+                    <input type="radio" name="" value="Disable" id="us-phone-number-off" disabled="disabled"><label for="us-phone-number-off">Off</label>
+                </td>
+            </tr>
+            <tr>
+                <td>"US and Canada" phone number</td>
+                <td><input id="" type="text" placeholder="1-800-780-5733"></td>
+            </tr>
+            <tr>
+                <td width="50%">Display "Europe" phone number</td>
+                <td>
+                    <input type="radio" name="" value="Enable" id="us-phone-number-on" checked="checked" disabled="disabled"><label for="us-phone-number-on"><span class="checked">On</span></label>
+                    <input type="radio" name="" value="Disable" id="us-phone-number-off" disabled="disabled"><label for="us-phone-number-off">Off</label>
+                </td>
+            </tr>
+            <tr>
+                <td>"Europe" phone number</td>
+                <td><input id="" type="text" placeholder="00-800-11-20-11-40"></td>
+            </tr>
+            <tr>
+                <td>Package Rate permissions</td>
+                <td>
+                    <select>
+                        <option>No Access</option>
+                        <option>Package Rates Only</option>
+                        <option>Package and Stand Alone Rates</option>
+                        <option>Stand Alone Rates Only</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+              <div class="row">
+            <div class="large-12 medium-12 columns right">
+                <a href="#" class="small radius button right">Update</a> <span class="right verify-changes"><a href="#" >Cancel</a></span>
+            </div>
+        </div>
+            
+              <!--
         <h5>Current Status</h5>
         <p class="subheader">If the product is checked, it is enabled and can make bookings.</p>
         <table class="responsive">
@@ -73,10 +150,15 @@
             </tr>
         </tbody>
         </table>
-        <p><a href="#" class="small radius button">Update</a></p>
+        -->
+
+            
+
     </form>
     </div>
 </div>
+
+
 
     
 </body>
