@@ -19,7 +19,7 @@ body {
 	font-size: .85rem !important;
 	color: #eda700;
 }
-.nav a.here {
+.nav a.current-location {
 	font-weight: bold;
 	font-size: .85rem !important;
 }
@@ -33,9 +33,15 @@ body {
 .alert {
 	margin-bottom: 20px;
     padding: 15px;
-    background-color: #fcf9ee;
+    background-color: #FFF4CC;
     border: 0;
-    border-left: 2px solid #ffeb8e;
+    border-left: 4px solid #FFE070;
+}
+.alert p {
+	font-size:.85rem !important;
+}
+.alert p span {
+	font-weight: bold;
 }
 .affiliate-name-cid-display {
 	padding: 10px !important;
@@ -78,7 +84,7 @@ td.disabled {
 	margin: 10px 20px;
 }
 
-/* @group edit page */
+input[type="radio"]:checked,
 label span.checked {
 	font-weight: bold;
 }
@@ -89,4 +95,3 @@ ul.make-changes-container {
 ul.make-changes-container li {
 	list-style-type: none;
 }
-/* @end */
