@@ -1,35 +1,113 @@
 /*-  CSS "libraries"
 ----------------------------------------------------------------------*/
 @import url("foundation.css");
+@import url("font.css");
 
-body {
-	line-height:1;
-	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-webkit-text-size-adjust: 100%;
+
+body,
+button, .button,
+select,
+.top-bar-section ul li > a,
+.pricing-table .title,
+.pricing-table .price,
+.tabs dd > a, .tabs .tab-title > a,
+.side-nav,
+.side-nav li.active > a:first-child:not(.button),
+h1, h2, h3, h4, h5, h6,
+.sub-nav dt,
+.sub-nav dd,
+.sub-nav li,
+.label {
+	font-family:"Open Sans","Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
-.nav {
-	padding: 10px 20px;
+textarea {
+    height: 200px;
 }
-.nav a {
-	margin-right: 30px;
-	font-size: .85rem !important;
-}
-.nav a:hover{
-	text-decoration: underline;
-	font-size: .85rem !important;
-	color: #eda700;
-}
-.nav a.current-location {
+input[type="radio"]:checked,
+label span.checked {
 	font-weight: bold;
-	font-size: .85rem !important;
 }
-.row.last {
-	height: 10rem;
+/* @group header */
+.switchbox {
+	width: 30%;
+	margin: 10px 0;
+	float: left;
 }
-.row.odd {
-	background: #FFF;
-	vertical-align: middle;
+.logout {
+	margin: 10px 0;
 }
+/* @end */
+/* @group Navigation */
+.nav {
+	padding: 0;
+	background: #2ba6cb;
+	border: 0;
+}
+#primary-nav ul {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#primary-nav ul a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:600;
+	line-height:2.5rem;
+	padding:0 1.5rem;
+	text-transform: uppercase;
+	font-size: .95rem !important;
+	color: #FFF;
+}
+#primary-nav ul a:hover {
+	color: #61b6d9 !important;
+}
+#primary-nav ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;	
+}
+#primary-nav .current-location {
+	background:#FFF;
+}
+#primary-nav .current-location a {
+	color: #61b6d9;
+}
+#primary-nav ul li:hover {
+	background:#FFF;
+	color: #333;
+}
+#primary-nav ul li:hover a {
+	color: #333;
+}
+#primary-nav ul ul {
+	display:none;
+	position:absolute;
+	top: 100%;
+	left:0;
+	background:#fff;
+	padding:0;
+}
+#primary-nav ul ul li {
+	float:none;
+	width:20rem;
+}
+#primary-nav ul ul a {
+	line-height:120%;
+	padding:.5rem 1.5rem;
+}
+#primary-nav ul ul ul {
+	top:0;
+	left:100%;
+}
+#primary-nav ul li:hover > ul {
+	display:block;
+}
+/* @end */
+/* @group top of page alert */
 .alert {
 	margin-bottom: 20px;
     padding: 15px;
@@ -37,12 +115,24 @@ body {
     border: 0;
     border-left: 4px solid #FFE070;
 }
+.error {
+	margin-bottom: 20px;
+    padding: 15px;
+    border: 0;
+    background-color: #ffebca;
+    border: 0;
+    border-left: 4px solid #fe7822;
+}
+.error p,
 .alert p {
 	font-size:.85rem !important;
 }
+.error p span,
 .alert p span {
 	font-weight: bold;
 }
+/* @end */
+/* @group name and CID display bar */
 .affiliate-name-cid-display {
 	padding: 10px !important;
 }
@@ -52,41 +142,43 @@ body {
 .affiliate-name-cid-display a {
 	font-size: .7rem !important;	
 }
-textarea {
-    height: 200px;
-}
-.switchbox {
-	width: 30%;
-	margin: 10px 0;
-	float: left;
-}
-.logout {
-	margin: 10px 0;
-}
-table.responsive {
-	width: 100%;
-}
-table.responsive th {
-	width: 70px;
-	font: inherit;
-}
-table.responsive input[type=checkbox] {
-		vertical-align: middle;
-		margin: 5px auto;
-}
-td.enabled {
-	    background: #69aa4e;
-}
-td.disabled {
+span.CID-identification {
 	background: #bababa;
+	font-size: .65rem;
+	font-weight: bolder;
+	padding: 0 .2rem;
+	margin: 0 .2rem;
+	vertical-align: 2px;
 }
-.verify-changes {
-	margin: 10px 20px;
+span.CID-identification.parent:after {
+	content: "P";
+}
+span.CID-identification.child:after {
+	content: "C";
+}
+span.EAC-identification {
+	background: #a5d88a;
+	font-size: .65rem;
+	font-weight: bolder;
+	padding: 0 .2rem;
+	margin: 0 .2rem 0 .1rem;
+	vertical-align: 2px;
+}
+span.EAC-identification:after {
+	content: "EAC";
 }
 
-input[type="radio"]:checked,
-label span.checked {
-	font-weight: bold;
+/* @end */
+.row.last {
+	height: 10rem;
+}
+.row.odd {
+	background: #FFF;
+	vertical-align: middle;
+}
+.verify-changes,
+.cancel-action-link {
+	margin: 10px 20px;
 }
 ul.make-changes-container {
 	margin-top: 3rem;
@@ -95,3 +187,18 @@ ul.make-changes-container {
 ul.make-changes-container li {
 	list-style-type: none;
 }
+/* @group Results table */
+table.results {
+	width: 100%;
+}
+table.results tbody tr td {
+	line-height: 1.75em !important;
+}
+*[data-href] {
+    cursor: pointer;
+}
+table tr[data-href]:hover {
+	background-color: #a0d3e8;
+}
+
+/* @end */
