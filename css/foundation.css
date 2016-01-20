@@ -14,7 +14,7 @@ body {
 
 body {
   background: #fff;
-  color: #222222;
+  color: #333;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -22,7 +22,12 @@ body {
   font-style: normal;
   line-height: 1.5;
   position: relative;
-  cursor: auto; }
+  cursor: auto;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
 a {
 	font-size: 1.0rem !important;
 }

@@ -17,15 +17,15 @@
 </div>
 
 <div class="row">
-    <div class="medium-12 large-12 columns">
-        <div class="nav panel">
-            <a href="" class="current-location">Profile</a>
-            <a href="">Site Settings</a>
-            <a href="">Clone CID</a>
-            <!--
-            <a href="">Financial</a> 
-            -->
-        </div>
+    <div class="large-12  medium-12 columns">
+        <nav id="primary-nav" class="nav panel clearFix">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current-location"><a href="#">Profile</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="#">Clone CID</a></li>
+            </ul>
+        </nav>
     </div>
 </div>
 
@@ -37,7 +37,7 @@
         </div>
         
         <div class="medium-6 large-6 columns">
-           <p>CID <strong>12345</strong> <a href="">change</a></p>
+           <p>CID <strong>12345</strong><span class="CID-identification parent"></span> <a href="">change</a></p>
         </div>
     </div>
   </div>
@@ -146,7 +146,7 @@
 
                 <div class="row">
                     <div class="medium-12 large-12 columns">
-                        <p><a href="#" class="small radius button right">Update</a></p>
+                        <a href="#" class="radius button right">Update</a>  <span class="right verify-changes"><a href="#" >Cancel</a></span>
                     </div>
                 </div>
             </form>

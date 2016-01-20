@@ -18,11 +18,14 @@
 
 <div class="row">
     <div class="large-12  medium-12 columns">
-        <div class="nav panel">
-            <a href="">Profile</a>
-            <a href="">Site Settings</a>
-            <a href="" class="current-location">Clone CID</a>
-        </div>
+        <nav id="primary-nav" class="nav panel clearFix">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li class="current-location"><a href="#">Clone CID</a></li>
+            </ul>
+        </nav>
     </div>
 </div>
 
@@ -34,7 +37,7 @@
         </div>
         
         <div class="large-6 medium-6 columns">
-           <p>CID <strong>12345</strong> <a href="">change</a></p>
+           <p>CID <strong>12345</strong><span class="CID-identification parent"></span> <a href="">change</a></p>
         </div>
     </div>
   </div>
@@ -44,13 +47,6 @@
     <div class="large-12 medium-12 columns">
         <fieldset>
             <form>
-                
-                <div class="row">
-                    <div class="large-12 medium-12 columns">
-                        
-                    </div>
-                </div>
-
                 
                  <div class="row">
                     <div class="large-6 medium-6 columns">
@@ -73,7 +69,7 @@
                
             <div class="row">
                 <div class="large-12 medium-12 columns right">
-                    <a href="#" class="small radius button right">Create</a> <span class="right verify-changes"><a href="#" >Cancel</a></span>
+                    <a href="#" class="radius button right">Create</a> <span class="right cancel-action-link"><a href="#" >Cancel</a></span>
                 </div>
             </div>
             
