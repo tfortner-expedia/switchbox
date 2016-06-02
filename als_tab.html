@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Site Settings</title>
+    <link rel="stylesheet" href="css/global.css" type="text/css">
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+<div class="row">
+    <div class="medium-12 large-12 columns">
+        <img class="switchbox" src="img/switchbox.png" alt="switchbox">
+        <a href="" class="logout right">Logout</a>
+        <hr/>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12  medium-12 columns">
+        <nav id="primary-nav" class="nav panel clearFix">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="#">Clone CID</a></li>
+                <li class="current-location"><a href="#">Offline Support</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="callout panel clearFix affiliate-name-cid-display">
+        <div class="large-6 medium-6 columns">
+           <p>AffiliateName</p>
+        </div>
+        
+        <div class="large-6 medium-6 columns">
+           <p>CID <strong>12345</strong><span class="CID-identification parent"></span><span class="EAC-identification"></span><a href="">change</a></p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- FULL PAGE ALERT
+<div class="row">
+    <div class="large-12 medium-12 columns">
+        <div class="alert panel">
+          <p>Alert</p>
+        </div>
+    </div>
+</div> 
+-->
+
+<div class="row">
+    <div class="large-12 columns">
+        <fieldset>
+            <form>
+                
+                 <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="affiliate-URL">URL</label>
+                        <input id="affiliate-URL" type="text" placeholder="http://www.myurl.com">
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                        <label for="credit-card">Corporate Credit Card enabled?</label>
+                        <input type="radio" name="credit-card-enabled" value="Enable" id="credit-card-enabled" checked="checked" disabled="disabled"><label for="credit-card"><span class="checked">Yes</span></label>
+                        <input type="radio" name="credit-card-disabled" value="Disable" id="credit-card-disabled" disabled="disabled"><label for="credit-card">No</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="expedia-collection-inv">Expedia Collect Inventory enabled?</label>
+                        <input type="radio" name="expedia-collection-inv" value="Enable" id="expedia-collection-inv-enabled" checked="checked"><label for="expedia-collection-inv"><span class="checked">Yes</span></label>
+                        <input type="radio" name="expedia-collection-inv" value="Disable" id="expedia-collection-inv-disabled"><label for="expedia-collection-inv">No</label>
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                        <label for="pkg-rate">Package Rates enabled?</label>
+                        <input type="radio" name="pkg-rate" value="Enable" id="pkg-rate-enabled" checked="checked"><label for="pkg-rate"><span class="checked">Yes</span></label>
+                        <input type="radio" name="pkg-rate" value="Disable" id="pkg-rate-disabled"><label for="pkg-rate">No</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Preferred language for contacting partner in case of relocated</label>
+                        <input id="" type="text" placeholder="English">
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                        <label for="cust-direct-support">Customer Direct Support enabled?</label>
+                        <input type="radio" name="cust-direct-support" value="Enable" id="cust-direct-support-enabled" checked="checked"><label for="cust-direct-support"><span class="checked">Yes</span></label>
+                        <input type="radio" name="cust-direct-support" value="Disable" id="cust-direct-support-disabled"><label for="cust-direct-support">No</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="aff-agent-support">Affiliate Agent Support enabled?</label>
+                        <input type="radio" name="aff-agent-support" value="Enable" id="aff-agent-support-enabled" checked="checked"><label for="aff-agent-support"><span class="checked">Yes</span></label>
+                        <input type="radio" name="aff-agent-support" value="Disable" id="aff-agent-support-disabled"><label for="aff-agent-support">No</label>
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                        <label for="aff-agent-support-plan">Affiliate Agent Support Plan</label>
+                        <input id="aff-agent-support-plan" type="text" placeholder="AAS-E">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="aff-email-events">Affiliate email receiving create/change/cancel events</label>
+                        <input id="aff-email-events" type="text" placeholder="email@address.com">
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                         <label for="aff-sut-serv-email">Affiliate Customer Service email address</label>
+                        <input id="aff-sut-serv-email" type="text" placeholder="email@address.com">
+                    </div>
+                </div>
+                
+                 <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Affiliate Customer Service phone number</label>
+                        <input id="" type="text" placeholder="(XXX) XXX-XXXX">
+                    </div>
+
+                     <div class="large-6 medium-6 columns">
+                        <label for="">GDS Type used to make bookings</label>
+                        <input id="" type="text" placeholder="">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Branded Phone Experience enabled?</label>
+                        <input type="radio" name="" value="Enable" id="" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
+                        <input type="radio" name="" value="Disable" id="" disabled="disabled"><label for="">No</label>
+
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Phone Brand</label>
+                        <input id="" type="text" placeholder="">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Affiliate Relocations Phone Number</label>
+                        <input id="" type="text" placeholder="(XXX) XXX-XXXX">
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Affiliate Relocations Email</label>
+                        <input id="" type="text" placeholder="email@address.com">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Voyager Sales enabled?</label>
+                        <input type="radio" name="" value="Enable" id="" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
+                        <input type="radio" name="" value="Disable" id="" disabled="disabled"><label for="">No</label>
+                    </div>
+
+                    <div class="large-6 medium-6 columns">
+                        <label for="">Voyager Service enabled?</label>
+                        <input type="radio" name="" value="Enable" id="" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
+                        <input type="radio" name="" value="Disable" id="" disabled="disabled"><label for="">No</label>
+                    </div>
+                </div>
+                
+                
+
+                <div class="row">
+                    <div class="large-12  medium-12 columns">  
+                        
+                                
+                        <label for="expand-options">
+                            <span class="expand-link">[Expand]</span>
+                        </label>
+                        <input type="radio" id="expand-options" name="group">
+                        <label for="hide-options">
+                            <span class="expand-link">[Hide]</span> 
+                        </label>    
+                        <input type="radio" id="hide-options" name="group">
+                    
+                        <span id="content">
+                            <div class="row">
+                                <div class="large-6 medium-6 columns">
+                                    <label for="">Other</label>
+                                    <input type="radio" name="" value="Enable" id="" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
+                                    <input type="radio" name="" value="Disable" id="" disabled="disabled"><label for="">No</label>
+                                </div>
+                    
+                                <div class="large-6 medium-6 columns">
+                                    <label for="">Other</label>
+                                    <input type="radio" name="" value="Enable" id="" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
+                                    <input type="radio" name="" value="Disable" id="" disabled="disabled"><label for="">No</label>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+
+                
+
+            <div class="row">
+                <div class="large-12 medium-12 columns right">
+                    <a href="#" class="radius button right">Update</a> <span class="right verify-changes"><a href="#" >Cancel</a></span>
+                </div>
+            </div>
+            
+        </form>
+        </fieldset>
+    </div>
+</div>
+
+<div class="row last clearFix">&nbsp;</div>
+
+<script src="js/vendor/jquery.js"></script>
+    
+</body>
+</html>

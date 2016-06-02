@@ -3,6 +3,9 @@
 @import url("foundation.css");
 @import url("font.css");
 
+.callout {
+	padding: 10px !important;
+}
 
 body,
 button, .button,
@@ -133,9 +136,6 @@ label span.checked {
 }
 /* @end */
 /* @group name and CID display bar */
-.affiliate-name-cid-display {
-	padding: 10px !important;
-}
 .affiliate-name-cid-display p {
 	margin-bottom: 0;
 }
@@ -167,6 +167,11 @@ span.EAC-identification {
 span.EAC-identification:after {
 	content: "EAC";
 }
+.test-identification {
+	border-color: #D35400;
+	background: rgba(211, 84, 0, 0.2);
+	padding: 5px;
+}
 
 /* @end */
 .row.last {
@@ -197,8 +202,90 @@ table.results tbody tr td {
 *[data-href] {
     cursor: pointer;
 }
-table tr[data-href]:hover {
-	background-color: #a0d3e8;
-}
+
+
+
 
 /* @end */
+
+
+table {
+    border-collapse: collapse;
+}
+td, th {
+    padding: 0.75em 1.5em;
+    text-align: left;
+}
+th {
+    background-color: #31bc86;
+    font-weight: bold;
+    white-space: nowrap;
+}
+tbody th {
+	background-color: #2ea879;
+}
+tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+    background-color: rgba(129,208,177,.3);
+}
+
+.sticky-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	width: 100%;
+}
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-col,
+.sticky-wrap .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .125s ease-in-out;
+	z-index: 50;
+	width: auto; /* Prevent table from stretching to full size */
+}
+	.sticky-wrap .sticky-thead {
+		box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
+		z-index: 100;
+		width: 100%; /* Force stretch */
+	}
+	.sticky-wrap .sticky-intersect {
+		opacity: 1;
+		z-index: 150;
+
+	}
+		.sticky-wrap .sticky-intersect th {
+			background-color: #666;
+			color: #eee;
+		}
+.sticky-wrap td,
+.sticky-wrap th {
+	box-sizing: border-box;
+}
+
+
+/* @group ShowHide Content */
+label span.expand-link {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+input#expand-options, input#hide-options {
+    display:none;
+}
+span#content {
+    display:none;
+}
+input#expand-options:checked ~ span#content {
+  display:block;
+}
+input#hide-options:checked ~ span#content {
+    display:none;
+}
+/* @end */
+
