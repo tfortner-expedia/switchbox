@@ -74,9 +74,12 @@
 
                 <div class="row">
                     <div class="large-6 medium-6 columns">
-                        <label for="expedia-collection-inv">Expedia Collect Inventory enabled?</label>
-                        <input type="radio" name="expedia-collection-inv" value="Enable" id="expedia-collection-inv-enabled" checked="checked"><label for="expedia-collection-inv"><span class="checked">Yes</span></label>
-                        <input type="radio" name="expedia-collection-inv" value="Disable" id="expedia-collection-inv-disabled"><label for="expedia-collection-inv">No</label>
+                        <label for="expedia-collection-inv">Inventory type</label>
+                        <select name="expedia-collection-inv">
+                            <option>Expedia Collect</option>
+                            <option>Hotel Collect with deposit</option>
+                            <option>Hotel Collect without deposit</option>
+                        </select>
                     </div>
 
                     <div class="large-6 medium-6 columns">
@@ -126,26 +129,26 @@
 
                  <div class="row">
                     <div class="large-6 medium-6 columns">
-                        <label for="">Affiliate Customer Service phone number</label>
+                        <label for="aff-cust-serv-phone">Affiliate Customer Service phone number</label>
                         <input id="aff-cust-serv-phone" type="text" placeholder="(XXX) XXX-XXXX">
                     </div>
 
                      <div class="large-6 medium-6 columns">
-                        <label for="">GDS Type used to make bookings</label>
+                        <label for="gds-type-for-bookings">GDS Type used to make bookings</label>
                         <input id="gds-type-for-bookings" type="text" placeholder="">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="large-6 medium-6 columns">
-                        <label for="">Branded Phone Experience enabled?</label>
-                        <input type="radio" name="" value="Enable" id="brand-phone-exp-enabled" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
-                        <input type="radio" name="" value="Disable" id="brand-phone-exp-disabled" disabled="disabled"><label for="">No</label>
+                        <label for="brand-phone-exp">Branded Phone Experience enabled?</label>
+                        <input type="radio" name="" value="Enable" id="brand-phone-exp-enabled" checked="checked" disabled="disabled"><label for="brand-phone-exp"><span class="checked">Yes</span></label>
+                        <input type="radio" name="" value="Disable" id="brand-phone-exp-disabled" disabled="disabled"><label for="brand-phone-exp">No</label>
 
                     </div>
 
                     <div class="large-6 medium-6 columns">
-                        <label for="">Phone Brand</label>
+                        <label for="phone-brand">Phone Brand</label>
                         <input id="phone-brand" type="text" placeholder="">
                     </div>
                 </div>
@@ -164,15 +167,15 @@
 
                 <div class="row">
                     <div class="large-6 medium-6 columns">
-                        <label for="">Voyager Sales enabled?</label>
-                        <input type="radio" name="" value="Enable" id="voyager-sales-enabled" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
-                        <input type="radio" name="" value="Disable" id="voyager-sales-disabled" disabled="disabled"><label for="">No</label>
+                        <label for="voyager-sales">Voyager Sales enabled?</label>
+                        <input type="radio" name="" value="Enable" id="voyager-sales-enabled" checked="checked" disabled="disabled"><label for="voyager-sales"><span class="checked">Yes</span></label>
+                        <input type="radio" name="" value="Disable" id="voyager-sales-disabled" disabled="disabled"><label for="voyager-sales">No</label>
                     </div>
 
                     <div class="large-6 medium-6 columns">
-                        <label for="">Voyager Service enabled?</label>
-                        <input type="radio" name="" value="Enable" id="voyager-service-enabled" checked="checked" disabled="disabled"><label for=""><span class="checked">Yes</span></label>
-                        <input type="radio" name="" value="Disable" id="voyager-service-disabled" disabled="disabled"><label for="">No</label>
+                        <label for="voyager-service">Voyager Service enabled?</label>
+                        <input type="radio" name="" value="Enable" id="voyager-service-enabled" checked="checked" disabled="disabled"><label for="voyager-service"><span class="checked">Yes</span></label>
+                        <input type="radio" name="" value="Disable" id="voyager-service-disabled" disabled="disabled"><label for="voyager-service">No</label>
                     </div>
                 </div>
 
@@ -180,7 +183,6 @@
 
                 <div class="row">
                     <div class="large-12  medium-12 columns">
-
 
                         <label for="expand-options">
                             <span class="expand-link">[Expand]</span>
@@ -208,8 +210,6 @@
                         </span>
                     </div>
                 </div>
-
-
 
             <div class="row">
                 <div class="large-12 medium-12 columns right">
