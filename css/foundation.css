@@ -1119,10 +1119,7 @@ button, .button {
   -moz-appearance: none;
   border-radius: 0;
   display: inline-block;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
+  padding: .75rem 2rem;
   font-size: 1rem;
   background-color: #2ba6cb;
   border-color: #2285a2;
@@ -2186,7 +2183,6 @@ meta.foundation-mq-topbar {
 /* Accessibility - hides the forward slash */
 [aria-label="breadcrumbs"] [aria-hidden="true"]:after {
   content: "/"; }
-
 .alert-box {
   border-style: solid;
   border-width: 1px;
@@ -2238,7 +2234,9 @@ meta.foundation-mq-topbar {
     border-color: #74bfdd;
     color: #4f4f4f; }
   .alert-box.alert-close {
-    opacity: 0; }
+    opacity: 0; } 
+    
+    
 
 .inline-list {
   margin: 0 auto 1.0625rem auto;
